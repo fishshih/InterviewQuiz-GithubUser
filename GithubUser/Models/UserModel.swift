@@ -30,7 +30,7 @@ struct UserModel: Codable {
     let hireable: Bool?
     let bio, twitterUsername: String?
     let publicRepos, publicGists, followers, following: Int
-    let createdAt, updatedAt: Date
+    let createdAt, updatedAt: String
     let privateGists, totalPrivateRepos, ownedPrivateRepos, diskUsage: Int
     let collaborators: Int
     let twoFactorAuthentication: Bool
