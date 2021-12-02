@@ -15,6 +15,7 @@
 		DA1B17A227597287006E3C21 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17A127597287006E3C21 /* UserModel.swift */; };
 		DA1B17A5275974AB006E3C21 /* UserListElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17A4275974AB006E3C21 /* UserListElementModel.swift */; };
 		DA1B17B227597CED006E3C21 /* GUUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17B127597CED006E3C21 /* GUUserDefaults.swift */; };
+		DA1B17B527597DEA006E3C21 /* TokenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17B427597DEA006E3C21 /* TokenPlugin.swift */; };
 		DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0CF275900F700636D7B /* Coordinator.swift */; };
 		DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */; };
 		DA1DF0D62759165D00636D7B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF0D52759165D00636D7B /* RxSwift */; };
@@ -49,6 +50,7 @@
 		DA1B17A127597287006E3C21 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		DA1B17A4275974AB006E3C21 /* UserListElementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListElementModel.swift; sourceTree = "<group>"; };
 		DA1B17B127597CED006E3C21 /* GUUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUUserDefaults.swift; sourceTree = "<group>"; };
+		DA1B17B427597DEA006E3C21 /* TokenPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenPlugin.swift; sourceTree = "<group>"; };
 		DA1DF0CF275900F700636D7B /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorPrototype.swift; sourceTree = "<group>"; };
 		DA1DF0E02759179C00636D7B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				DA1DF0EB2759290800636D7B /* Extension */,
 				DA1DF0EF2759292C00636D7B /* PrepareClassInstance.swift */,
 				DA1B17B127597CED006E3C21 /* GUUserDefaults.swift */,
+				DA1B17B427597DEA006E3C21 /* TokenPlugin.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				DA1B17B227597CED006E3C21 /* GUUserDefaults.swift in Sources */,
 				DA1DF12D2759545200636D7B /* Decision.swift in Sources */,
 				DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */,
+				DA1B17B527597DEA006E3C21 /* TokenPlugin.swift in Sources */,
 				DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */,
 				DA1DF0F02759292C00636D7B /* PrepareClassInstance.swift in Sources */,
 				DA1DF1222759530D00636D7B /* OAuthModel.swift in Sources */,
