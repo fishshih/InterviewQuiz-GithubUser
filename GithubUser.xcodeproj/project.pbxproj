@@ -12,6 +12,7 @@
 		DA0BA1872757FA780049D2E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0BA1852757FA780049D2E8 /* Main.storyboard */; };
 		DA0BA1892757FA7A0049D2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0BA1882757FA7A0049D2E8 /* Assets.xcassets */; };
 		DA0BA18C2757FA7A0049D2E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0BA18A2757FA7A0049D2E8 /* LaunchScreen.storyboard */; };
+		DA1B17A227597287006E3C21 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17A127597287006E3C21 /* UserModel.swift */; };
 		DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0CF275900F700636D7B /* Coordinator.swift */; };
 		DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */; };
 		DA1DF0D62759165D00636D7B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF0D52759165D00636D7B /* RxSwift */; };
@@ -43,6 +44,7 @@
 		DA0BA1882757FA7A0049D2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0BA18B2757FA7A0049D2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0BA18D2757FA7A0049D2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA1B17A127597287006E3C21 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		DA1DF0CF275900F700636D7B /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorPrototype.swift; sourceTree = "<group>"; };
 		DA1DF0E02759179C00636D7B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1DF1212759530D00636D7B /* OAuthModel.swift */,
+				DA1B17A127597287006E3C21 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				DA1DF0E827591A4800636D7B /* LoginViewModel.swift in Sources */,
 				DA1DF130275955DF00636D7B /* APIBase.swift in Sources */,
 				DA1DF0E12759179C00636D7B /* AppCoordinator.swift in Sources */,
+				DA1B17A227597287006E3C21 /* UserModel.swift in Sources */,
 				DA1DF12D2759545200636D7B /* Decision.swift in Sources */,
 				DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */,
 				DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */,
