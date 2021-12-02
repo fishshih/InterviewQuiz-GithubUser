@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DA0BA1802757FA780049D2E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0BA17F2757FA780049D2E8 /* AppDelegate.swift */; };
 		DA0BA1822757FA780049D2E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0BA1812757FA780049D2E8 /* SceneDelegate.swift */; };
-		DA0BA1842757FA780049D2E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0BA1832757FA780049D2E8 /* ViewController.swift */; };
 		DA0BA1872757FA780049D2E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0BA1852757FA780049D2E8 /* Main.storyboard */; };
 		DA0BA1892757FA7A0049D2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0BA1882757FA7A0049D2E8 /* Assets.xcassets */; };
 		DA0BA18C2757FA7A0049D2E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0BA18A2757FA7A0049D2E8 /* LaunchScreen.storyboard */; };
+		DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0CF275900F700636D7B /* Coordinator.swift */; };
+		DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */; };
+		DA1DF0D62759165D00636D7B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF0D52759165D00636D7B /* RxSwift */; };
+		DA1DF0D82759165D00636D7B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF0D72759165D00636D7B /* RxCocoa */; };
+		DA1DF0DA2759165D00636D7B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF0D92759165D00636D7B /* RxRelay */; };
+		DA1DF0DE2759173300636D7B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF0DD2759173300636D7B /* SnapKit */; };
+		DA1DF0E12759179C00636D7B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0E02759179C00636D7B /* AppCoordinator.swift */; };
+		DA1DF0E627591A4800636D7B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0E327591A4800636D7B /* LoginCoordinator.swift */; };
+		DA1DF0E727591A4800636D7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0E427591A4800636D7B /* LoginViewController.swift */; };
+		DA1DF0E827591A4800636D7B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0E527591A4800636D7B /* LoginViewModel.swift */; };
+		DA1DF0ED2759291000636D7B /* CellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0EC2759291000636D7B /* CellExtension.swift */; };
+		DA1DF0F02759292C00636D7B /* PrepareClassInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF0EF2759292C00636D7B /* PrepareClassInstance.swift */; };
+		DA1DF1152759511400636D7B /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF1142759511400636D7B /* CombineMoya */; };
+		DA1DF1172759511400636D7B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF1162759511400636D7B /* Moya */; };
+		DA1DF1192759511400636D7B /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF1182759511400636D7B /* RxMoya */; };
+		DA1DF11D2759517100636D7B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF11C2759517100636D7B /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA0BA17C2757FA780049D2E8 /* GithubUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0BA17F2757FA780049D2E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0BA1812757FA780049D2E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA0BA1832757FA780049D2E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA0BA1862757FA780049D2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA0BA1882757FA7A0049D2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0BA18B2757FA7A0049D2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0BA18D2757FA7A0049D2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA1DF0CF275900F700636D7B /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorPrototype.swift; sourceTree = "<group>"; };
+		DA1DF0E02759179C00636D7B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DA1DF0E327591A4800636D7B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		DA1DF0E427591A4800636D7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DA1DF0E527591A4800636D7B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DA1DF0EC2759291000636D7B /* CellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellExtension.swift; sourceTree = "<group>"; };
+		DA1DF0EF2759292C00636D7B /* PrepareClassInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareClassInstance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1DF0DA2759165D00636D7B /* RxRelay in Frameworks */,
+				DA1DF0DE2759173300636D7B /* SnapKit in Frameworks */,
+				DA1DF1172759511400636D7B /* Moya in Frameworks */,
+				DA1DF0D82759165D00636D7B /* RxCocoa in Frameworks */,
+				DA1DF11D2759517100636D7B /* Kingfisher in Frameworks */,
+				DA1DF1192759511400636D7B /* RxMoya in Frameworks */,
+				DA1DF1152759511400636D7B /* CombineMoya in Frameworks */,
+				DA1DF0D62759165D00636D7B /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +86,78 @@
 		DA0BA17E2757FA780049D2E8 /* GithubUser */ = {
 			isa = PBXGroup;
 			children = (
-				DA0BA17F2757FA780049D2E8 /* AppDelegate.swift */,
-				DA0BA1812757FA780049D2E8 /* SceneDelegate.swift */,
-				DA0BA1832757FA780049D2E8 /* ViewController.swift */,
-				DA0BA1852757FA780049D2E8 /* Main.storyboard */,
-				DA0BA1882757FA7A0049D2E8 /* Assets.xcassets */,
-				DA0BA18A2757FA7A0049D2E8 /* LaunchScreen.storyboard */,
-				DA0BA18D2757FA7A0049D2E8 /* Info.plist */,
+				DA1DF0C72758F86B00636D7B /* App */,
+				DA1DF0C82758F87A00636D7B /* Coordinators */,
+				DA1DF0C92758F88300636D7B /* Views */,
+				DA1DF0CA2758F88A00636D7B /* ViewModels */,
+				DA1DF0CB2758F89200636D7B /* Models */,
+				DA1DF0CC2758F89600636D7B /* Utilities */,
 			);
 			path = GithubUser;
+			sourceTree = "<group>";
+		};
+		DA1DF0C72758F86B00636D7B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA0BA17F2757FA780049D2E8 /* AppDelegate.swift */,
+				DA0BA1812757FA780049D2E8 /* SceneDelegate.swift */,
+				DA0BA1852757FA780049D2E8 /* Main.storyboard */,
+				DA0BA18A2757FA7A0049D2E8 /* LaunchScreen.storyboard */,
+				DA0BA18D2757FA7A0049D2E8 /* Info.plist */,
+				DA0BA1882757FA7A0049D2E8 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DA1DF0C82758F87A00636D7B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF0CF275900F700636D7B /* Coordinator.swift */,
+				DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */,
+				DA1DF0E02759179C00636D7B /* AppCoordinator.swift */,
+				DA1DF0E327591A4800636D7B /* LoginCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		DA1DF0C92758F88300636D7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF0E427591A4800636D7B /* LoginViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA1DF0CA2758F88A00636D7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF0E527591A4800636D7B /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA1DF0CB2758F89200636D7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA1DF0CC2758F89600636D7B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF0EB2759290800636D7B /* Extension */,
+				DA1DF0EF2759292C00636D7B /* PrepareClassInstance.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DA1DF0EB2759290800636D7B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF0EC2759291000636D7B /* CellExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +176,16 @@
 			dependencies = (
 			);
 			name = GithubUser;
+			packageProductDependencies = (
+				DA1DF0D52759165D00636D7B /* RxSwift */,
+				DA1DF0D72759165D00636D7B /* RxCocoa */,
+				DA1DF0D92759165D00636D7B /* RxRelay */,
+				DA1DF0DD2759173300636D7B /* SnapKit */,
+				DA1DF1142759511400636D7B /* CombineMoya */,
+				DA1DF1162759511400636D7B /* Moya */,
+				DA1DF1182759511400636D7B /* RxMoya */,
+				DA1DF11C2759517100636D7B /* Kingfisher */,
+			);
 			productName = GithubUser;
 			productReference = DA0BA17C2757FA780049D2E8 /* GithubUser.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +213,12 @@
 				Base,
 			);
 			mainGroup = DA0BA1732757FA780049D2E8;
+			packageReferences = (
+				DA1DF0D42759165D00636D7B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DA1DF0DC2759173300636D7B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DA1DF1132759511400636D7B /* XCRemoteSwiftPackageReference "Moya" */,
+				DA1DF11B2759517100636D7B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DA0BA17D2757FA780049D2E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +246,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0BA1842757FA780049D2E8 /* ViewController.swift in Sources */,
+				DA1DF0E727591A4800636D7B /* LoginViewController.swift in Sources */,
+				DA1DF0E627591A4800636D7B /* LoginCoordinator.swift in Sources */,
+				DA1DF0ED2759291000636D7B /* CellExtension.swift in Sources */,
 				DA0BA1802757FA780049D2E8 /* AppDelegate.swift in Sources */,
 				DA0BA1822757FA780049D2E8 /* SceneDelegate.swift in Sources */,
+				DA1DF0E827591A4800636D7B /* LoginViewModel.swift in Sources */,
+				DA1DF0E12759179C00636D7B /* AppCoordinator.swift in Sources */,
+				DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */,
+				DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */,
+				DA1DF0F02759292C00636D7B /* PrepareClassInstance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GithubUser/Info.plist;
+				INFOPLIST_FILE = GithubUser/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GithubUser/Info.plist;
+				INFOPLIST_FILE = GithubUser/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +455,84 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA1DF0D42759165D00636D7B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+		DA1DF0DC2759173300636D7B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		DA1DF1132759511400636D7B /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		DA1DF11B2759517100636D7B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA1DF0D52759165D00636D7B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA1DF0D42759165D00636D7B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		DA1DF0D72759165D00636D7B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA1DF0D42759165D00636D7B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DA1DF0D92759165D00636D7B /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA1DF0D42759165D00636D7B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		DA1DF0DD2759173300636D7B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA1DF0DC2759173300636D7B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DA1DF1142759511400636D7B /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA1DF1132759511400636D7B /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		DA1DF1162759511400636D7B /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA1DF1132759511400636D7B /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		DA1DF1182759511400636D7B /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA1DF1132759511400636D7B /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		DA1DF11C2759517100636D7B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA1DF11B2759517100636D7B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA0BA1742757FA780049D2E8 /* Project object */;
 }
