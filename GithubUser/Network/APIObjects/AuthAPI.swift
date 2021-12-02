@@ -19,6 +19,15 @@ private struct RequestTargetType: GUTargetType {
     let clientSecrets: String
     let code: String
 
+    var baseURL: URL {
+
+        guard let url = URL(string: "https://github.com") else {
+            assert(false)
+        }
+
+        return url
+    }
+
     var path: String {
         "/login/oauth/access_token"
     }

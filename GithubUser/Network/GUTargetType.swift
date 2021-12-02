@@ -22,9 +22,7 @@ extension GUTargetType {
 
     var baseURL: URL {
 
-        guard
-            let url = URL(string: "https://github.com")
-        else {
+        guard let url = URL(string: "https://api.github.com") else {
             assert(false)
         }
 
