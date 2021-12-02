@@ -24,7 +24,7 @@ class LoginCoordinator: Coordinator<LoginCoordinationReaction> {
     override func start() {
 
         let vc = LoginViewController()
-        let viewModel = LoginViewModel()
+        let viewModel = LoginViewModel(api: AuthAPI())
 
         rootViewController = vc
         vc.viewModel = viewModel

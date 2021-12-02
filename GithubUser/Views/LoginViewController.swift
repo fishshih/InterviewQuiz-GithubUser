@@ -43,6 +43,7 @@ class LoginViewController: UIViewController {
 private extension LoginViewController {
 
     func setupUI() {
+        view.backgroundColor = .white
         configureWebView()
     }
 
@@ -93,14 +94,14 @@ extension LoginViewController: WKNavigationDelegate {
 
         guard
             let urlString = webView.url?.absoluteString,
-            let code = URLComponents(string: urlString)?
-                .queryItems?
-                .first(where: { $0.name == "code" })?
-                .value
+            let queryItems = URLComponents(string: urlString)?.queryItems,
+            let code = queryItems.first(where: { $0.name == "code" })?.value
         else {
             return
         }
 
+        webView.navigationDelegate = nil
+        webView.removeFromSuperview()
         viewModel?.input.loginSuccess(code: code)
     }
 }

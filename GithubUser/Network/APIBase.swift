@@ -25,6 +25,10 @@ extension MoyaProvider where Target: GUTargetType {
 
             switch result {
             case .success(let response):
+
+                print("\n😎\(request.path)")
+                print(try! JSONSerialization.jsonObject(with: response.data, options: .allowFragments))
+
                 self.handleDecision(
                     request,
                     response: response,

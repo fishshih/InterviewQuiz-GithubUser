@@ -23,7 +23,6 @@ protocol LoginViewModelInput {
 }
 
 protocol LoginViewModelOutput {
-//    var url: Observable<URL> { get }
     var url: AnyPublisher<URL, Never> { get }
 }
 
@@ -39,14 +38,24 @@ class LoginViewModel: LoginViewModelPrototype {
     var input: LoginViewModelInput { self }
     var output: LoginViewModelOutput { self }
 
-    init() {
+    init(api: AuthAPIPrototype?) {
+
+        self.api = api
+
         buildURL()
+
+        guard let api = self.api else { return }
+
+        bind(api: api)
     }
 
     private let clientID = "450e752e195fd0b2d028"
     private let clientSecrets = "eda7875c63539707b756736b92fdde7785413581"
 
+    private let api: AuthAPIPrototype?
+
     @Published private var urlPublisher: URL?
+
     private let disposeBag = DisposeBag()
 }
 
@@ -55,49 +64,7 @@ class LoginViewModel: LoginViewModelPrototype {
 extension LoginViewModel: LoginViewModelInput {
 
     func loginSuccess(code: String) {
-
-        guard let url = URL(string: "https://github.com/login/oauth/access_token") else { return }
-
-        var request = URLRequest(url: url)
-
-        request.httpMethod = "POST"
-
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-
-        let parameters = [
-            "client_id": clientID,
-            "client_secret": clientSecrets,
-            "code": code
-        ]
-
-        request.httpBody = try? JSONSerialization
-            .data(
-                withJSONObject: parameters,
-                options: .prettyPrinted
-            )
-
-        let task = URLSession
-            .shared
-            .dataTask(with: request) { (data, response, error) in
-
-                if let error = error {
-                    print("😎 error = ", error)
-                }
-
-                guard
-                    let data = data,
-                    let jsonData = try? JSONSerialization.jsonObject(with: data, options: [])
-
-                else {
-                    print("😎 fail")
-                    return
-                }
-
-                print("😎 jsonData = ", jsonData)
-        }
-
-        task.resume()
+        api?.send(clientID: clientID, clientSecrets: clientSecrets, code: code)
     }
 }
 
@@ -115,6 +82,22 @@ extension LoginViewModel: LoginViewModelOutput {
 
 private extension LoginViewModel {
 
+    func bind(api: AuthAPIPrototype) {
+
+        api
+            .result
+            .subscribe(onNext: {
+                [weak self] result in
+                switch result {
+                case .success(let model):
+                    print("😎 token = ", model.token)
+                case .failure(let error):
+                    assert(false, "\(error)")
+                }
+            })
+            .disposed(by: disposeBag)
+    }
+
     func buildURL() {
 
         var urlComponents = URLComponents()
@@ -123,10 +106,13 @@ private extension LoginViewModel {
         urlComponents.host = "github.com"
         urlComponents.path = "/login/oauth/authorize"
 
+        let urlString = urlComponents.url?.absoluteString
+
         urlComponents.queryItems = [
             .init(name: "client_id", value: clientID),
             .init(name: "scope", value: "user"),
             .init(name: "allow_signup", value: "false"),
+            .init(name: "redirect_uri", value: urlString)
         ]
 
         guard let url = urlComponents.url else { return }
