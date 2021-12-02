@@ -28,6 +28,11 @@
 		DA1DF1172759511400636D7B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF1162759511400636D7B /* Moya */; };
 		DA1DF1192759511400636D7B /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF1182759511400636D7B /* RxMoya */; };
 		DA1DF11D2759517100636D7B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DA1DF11C2759517100636D7B /* Kingfisher */; };
+		DA1DF1222759530D00636D7B /* OAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF1212759530D00636D7B /* OAuthModel.swift */; };
+		DA1DF1262759536F00636D7B /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF1252759536F00636D7B /* AuthAPI.swift */; };
+		DA1DF12A2759543300636D7B /* GUTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF1292759543300636D7B /* GUTargetType.swift */; };
+		DA1DF12D2759545200636D7B /* Decision.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF12C2759545200636D7B /* Decision.swift */; };
+		DA1DF130275955DF00636D7B /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF12F275955DF00636D7B /* APIBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		DA1DF0E527591A4800636D7B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DA1DF0EC2759291000636D7B /* CellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellExtension.swift; sourceTree = "<group>"; };
 		DA1DF0EF2759292C00636D7B /* PrepareClassInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareClassInstance.swift; sourceTree = "<group>"; };
+		DA1DF1212759530D00636D7B /* OAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthModel.swift; sourceTree = "<group>"; };
+		DA1DF1252759536F00636D7B /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		DA1DF1292759543300636D7B /* GUTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUTargetType.swift; sourceTree = "<group>"; };
+		DA1DF12C2759545200636D7B /* Decision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
+		DA1DF12F275955DF00636D7B /* APIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +101,7 @@
 				DA1DF0C92758F88300636D7B /* Views */,
 				DA1DF0CA2758F88A00636D7B /* ViewModels */,
 				DA1DF0CB2758F89200636D7B /* Models */,
+				DA1DF120275952D300636D7B /* Network */,
 				DA1DF0CC2758F89600636D7B /* Utilities */,
 			);
 			path = GithubUser;
@@ -139,6 +150,7 @@
 		DA1DF0CB2758F89200636D7B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DA1DF1212759530D00636D7B /* OAuthModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +170,25 @@
 				DA1DF0EC2759291000636D7B /* CellExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		DA1DF120275952D300636D7B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF128275953F200636D7B /* APIObjects */,
+				DA1DF1292759543300636D7B /* GUTargetType.swift */,
+				DA1DF12C2759545200636D7B /* Decision.swift */,
+				DA1DF12F275955DF00636D7B /* APIBase.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DA1DF128275953F200636D7B /* APIObjects */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF1252759536F00636D7B /* AuthAPI.swift */,
+			);
+			path = APIObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,16 +277,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1DF12A2759543300636D7B /* GUTargetType.swift in Sources */,
 				DA1DF0E727591A4800636D7B /* LoginViewController.swift in Sources */,
 				DA1DF0E627591A4800636D7B /* LoginCoordinator.swift in Sources */,
 				DA1DF0ED2759291000636D7B /* CellExtension.swift in Sources */,
 				DA0BA1802757FA780049D2E8 /* AppDelegate.swift in Sources */,
+				DA1DF1262759536F00636D7B /* AuthAPI.swift in Sources */,
 				DA0BA1822757FA780049D2E8 /* SceneDelegate.swift in Sources */,
 				DA1DF0E827591A4800636D7B /* LoginViewModel.swift in Sources */,
+				DA1DF130275955DF00636D7B /* APIBase.swift in Sources */,
 				DA1DF0E12759179C00636D7B /* AppCoordinator.swift in Sources */,
+				DA1DF12D2759545200636D7B /* Decision.swift in Sources */,
 				DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */,
 				DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */,
 				DA1DF0F02759292C00636D7B /* PrepareClassInstance.swift in Sources */,
+				DA1DF1222759530D00636D7B /* OAuthModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
