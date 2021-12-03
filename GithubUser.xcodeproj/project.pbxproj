@@ -13,7 +13,7 @@
 		DA0BA1892757FA7A0049D2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0BA1882757FA7A0049D2E8 /* Assets.xcassets */; };
 		DA0BA18C2757FA7A0049D2E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0BA18A2757FA7A0049D2E8 /* LaunchScreen.storyboard */; };
 		DA1B17A227597287006E3C21 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17A127597287006E3C21 /* UserModel.swift */; };
-		DA1B17A5275974AB006E3C21 /* UserListElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17A4275974AB006E3C21 /* UserListElementModel.swift */; };
+		DA1B17A5275974AB006E3C21 /* UsersListElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17A4275974AB006E3C21 /* UsersListElementModel.swift */; };
 		DA1B17B227597CED006E3C21 /* GUUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17B127597CED006E3C21 /* GUUserDefaults.swift */; };
 		DA1B17B527597DEA006E3C21 /* TokenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17B427597DEA006E3C21 /* TokenPlugin.swift */; };
 		DA1B17B827597EB2006E3C21 /* UserInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B17B727597EB2006E3C21 /* UserInfoAPI.swift */; };
@@ -39,6 +39,15 @@
 		DA1DF12A2759543300636D7B /* GUTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF1292759543300636D7B /* GUTargetType.swift */; };
 		DA1DF12D2759545200636D7B /* Decision.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF12C2759545200636D7B /* Decision.swift */; };
 		DA1DF130275955DF00636D7B /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF12F275955DF00636D7B /* APIBase.swift */; };
+		DA572A5D275A8C29004C6DB9 /* UsersListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A5A275A8C29004C6DB9 /* UsersListCoordinator.swift */; };
+		DA572A5E275A8C29004C6DB9 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A5B275A8C29004C6DB9 /* UsersListViewController.swift */; };
+		DA572A5F275A8C29004C6DB9 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A5C275A8C29004C6DB9 /* UsersListViewModel.swift */; };
+		DA572A65275A8CE1004C6DB9 /* PersonalInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A62275A8CE1004C6DB9 /* PersonalInfoCoordinator.swift */; };
+		DA572A66275A8CE1004C6DB9 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A63275A8CE1004C6DB9 /* PersonalInfoViewController.swift */; };
+		DA572A67275A8CE1004C6DB9 /* PersonalInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A64275A8CE1004C6DB9 /* PersonalInfoViewModel.swift */; };
+		DA572A6C275A8CFE004C6DB9 /* UserInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A69275A8CFE004C6DB9 /* UserInfoCoordinator.swift */; };
+		DA572A6D275A8CFE004C6DB9 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */; };
+		DA572A6E275A8CFE004C6DB9 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A6B275A8CFE004C6DB9 /* UserInfoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +59,7 @@
 		DA0BA18B2757FA7A0049D2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0BA18D2757FA7A0049D2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA1B17A127597287006E3C21 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		DA1B17A4275974AB006E3C21 /* UserListElementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListElementModel.swift; sourceTree = "<group>"; };
+		DA1B17A4275974AB006E3C21 /* UsersListElementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListElementModel.swift; sourceTree = "<group>"; };
 		DA1B17B127597CED006E3C21 /* GUUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUUserDefaults.swift; sourceTree = "<group>"; };
 		DA1B17B427597DEA006E3C21 /* TokenPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenPlugin.swift; sourceTree = "<group>"; };
 		DA1B17B727597EB2006E3C21 /* UserInfoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoAPI.swift; sourceTree = "<group>"; };
@@ -68,6 +77,15 @@
 		DA1DF1292759543300636D7B /* GUTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUTargetType.swift; sourceTree = "<group>"; };
 		DA1DF12C2759545200636D7B /* Decision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
 		DA1DF12F275955DF00636D7B /* APIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBase.swift; sourceTree = "<group>"; };
+		DA572A5A275A8C29004C6DB9 /* UsersListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListCoordinator.swift; sourceTree = "<group>"; };
+		DA572A5B275A8C29004C6DB9 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		DA572A5C275A8C29004C6DB9 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		DA572A62275A8CE1004C6DB9 /* PersonalInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoCoordinator.swift; sourceTree = "<group>"; };
+		DA572A63275A8CE1004C6DB9 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		DA572A64275A8CE1004C6DB9 /* PersonalInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewModel.swift; sourceTree = "<group>"; };
+		DA572A69275A8CFE004C6DB9 /* UserInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCoordinator.swift; sourceTree = "<group>"; };
+		DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		DA572A6B275A8CFE004C6DB9 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +157,9 @@
 				DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */,
 				DA1DF0E02759179C00636D7B /* AppCoordinator.swift */,
 				DA1DF0E327591A4800636D7B /* LoginCoordinator.swift */,
+				DA572A5A275A8C29004C6DB9 /* UsersListCoordinator.swift */,
+				DA572A62275A8CE1004C6DB9 /* PersonalInfoCoordinator.swift */,
+				DA572A69275A8CFE004C6DB9 /* UserInfoCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -147,6 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				DA1DF0E427591A4800636D7B /* LoginViewController.swift */,
+				DA572A5B275A8C29004C6DB9 /* UsersListViewController.swift */,
+				DA572A63275A8CE1004C6DB9 /* PersonalInfoViewController.swift */,
+				DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				DA1DF0E527591A4800636D7B /* LoginViewModel.swift */,
+				DA572A5C275A8C29004C6DB9 /* UsersListViewModel.swift */,
+				DA572A64275A8CE1004C6DB9 /* PersonalInfoViewModel.swift */,
+				DA572A6B275A8CFE004C6DB9 /* UserInfoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -164,7 +191,7 @@
 			children = (
 				DA1DF1212759530D00636D7B /* OAuthModel.swift */,
 				DA1B17A127597287006E3C21 /* UserModel.swift */,
-				DA1B17A4275974AB006E3C21 /* UserListElementModel.swift */,
+				DA1B17A4275974AB006E3C21 /* UsersListElementModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,24 +322,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1B17A5275974AB006E3C21 /* UserListElementModel.swift in Sources */,
+				DA1B17A5275974AB006E3C21 /* UsersListElementModel.swift in Sources */,
 				DA1DF12A2759543300636D7B /* GUTargetType.swift in Sources */,
 				DA1DF0E727591A4800636D7B /* LoginViewController.swift in Sources */,
 				DA1DF0E627591A4800636D7B /* LoginCoordinator.swift in Sources */,
 				DA1DF0ED2759291000636D7B /* CellExtension.swift in Sources */,
 				DA1B17B827597EB2006E3C21 /* UserInfoAPI.swift in Sources */,
+				DA572A65275A8CE1004C6DB9 /* PersonalInfoCoordinator.swift in Sources */,
 				DA0BA1802757FA780049D2E8 /* AppDelegate.swift in Sources */,
+				DA572A66275A8CE1004C6DB9 /* PersonalInfoViewController.swift in Sources */,
 				DA1DF1262759536F00636D7B /* AuthAPI.swift in Sources */,
 				DA0BA1822757FA780049D2E8 /* SceneDelegate.swift in Sources */,
+				DA572A6C275A8CFE004C6DB9 /* UserInfoCoordinator.swift in Sources */,
 				DA1DF0E827591A4800636D7B /* LoginViewModel.swift in Sources */,
 				DA1DF130275955DF00636D7B /* APIBase.swift in Sources */,
+				DA572A6D275A8CFE004C6DB9 /* UserInfoViewController.swift in Sources */,
 				DA1DF0E12759179C00636D7B /* AppCoordinator.swift in Sources */,
 				DA1B17A227597287006E3C21 /* UserModel.swift in Sources */,
+				DA572A6E275A8CFE004C6DB9 /* UserInfoViewModel.swift in Sources */,
+				DA572A5F275A8C29004C6DB9 /* UsersListViewModel.swift in Sources */,
+				DA572A5D275A8C29004C6DB9 /* UsersListCoordinator.swift in Sources */,
+				DA572A5E275A8C29004C6DB9 /* UsersListViewController.swift in Sources */,
 				DA1B17BB275982C3006E3C21 /* UsersListAPI.swift in Sources */,
 				DA1B17B227597CED006E3C21 /* GUUserDefaults.swift in Sources */,
 				DA1DF12D2759545200636D7B /* Decision.swift in Sources */,
 				DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */,
 				DA1B17B527597DEA006E3C21 /* TokenPlugin.swift in Sources */,
+				DA572A67275A8CE1004C6DB9 /* PersonalInfoViewModel.swift in Sources */,
 				DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */,
 				DA1DF0F02759292C00636D7B /* PrepareClassInstance.swift in Sources */,
 				DA1DF1222759530D00636D7B /* OAuthModel.swift in Sources */,
