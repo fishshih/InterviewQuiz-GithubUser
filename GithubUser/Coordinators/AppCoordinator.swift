@@ -64,7 +64,7 @@ private extension AppCoordinator {
                 [weak self] reaction in
                 switch reaction {
                 case .loginSuccess:
-                    break
+                    self?.toAppMain()
                 }
             })
             .disposed(by: disposeBag)
@@ -74,8 +74,11 @@ private extension AppCoordinator {
     }
 
     func toAppMain() {
-//        let next = AppMainCoordinator(window: window)
-//        next.start()
-//        childCoordinator = next
+
+        let next = MainTabBarCoordinator(window: window)
+
+        next.start()
+
+        store(coordinator: next)
     }
 }
