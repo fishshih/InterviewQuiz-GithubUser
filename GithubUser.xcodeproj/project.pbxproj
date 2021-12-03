@@ -48,6 +48,7 @@
 		DA572A6C275A8CFE004C6DB9 /* UserInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A69275A8CFE004C6DB9 /* UserInfoCoordinator.swift */; };
 		DA572A6D275A8CFE004C6DB9 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */; };
 		DA572A6E275A8CFE004C6DB9 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A6B275A8CFE004C6DB9 /* UserInfoViewModel.swift */; };
+		DA572A7D275AB855004C6DB9 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A7C275AB855004C6DB9 /* CollectionExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		DA572A69275A8CFE004C6DB9 /* UserInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCoordinator.swift; sourceTree = "<group>"; };
 		DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		DA572A6B275A8CFE004C6DB9 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		DA572A7C275AB855004C6DB9 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +130,8 @@
 			children = (
 				DA1DF0C72758F86B00636D7B /* App */,
 				DA1DF0C82758F87A00636D7B /* Coordinators */,
-				DA1DF0C92758F88300636D7B /* Views */,
 				DA1DF0CA2758F88A00636D7B /* ViewModels */,
+				DA1DF0C92758F88300636D7B /* Views */,
 				DA1DF0CB2758F89200636D7B /* Models */,
 				DA1DF120275952D300636D7B /* Network */,
 				DA1DF0CC2758F89600636D7B /* Utilities */,
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1DF0EC2759291000636D7B /* CellExtension.swift */,
+				DA572A7C275AB855004C6DB9 /* CollectionExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				DA1B17B527597DEA006E3C21 /* TokenPlugin.swift in Sources */,
 				DA572A67275A8CE1004C6DB9 /* PersonalInfoViewModel.swift in Sources */,
 				DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */,
+				DA572A7D275AB855004C6DB9 /* CollectionExtension.swift in Sources */,
 				DA1DF0F02759292C00636D7B /* PrepareClassInstance.swift in Sources */,
 				DA1DF1222759530D00636D7B /* OAuthModel.swift in Sources */,
 			);
