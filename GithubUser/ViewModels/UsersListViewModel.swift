@@ -102,7 +102,7 @@ private extension UsersListViewModel {
                 case .success(let models):
                     self?.userModels = models
                 case .failure(let error):
-                    assert(true, "\(error)")
+                    assert(false, "\(error)")
                 }
             })
             .disposed(by: disposeBag)
@@ -115,7 +115,7 @@ private extension UsersListViewModel {
                 case .success(let model):
                     self?.reaction.send(.showUserInfo(model: model))
                 case .failure(let error):
-                    assert(true, "\(error)")
+                    assert(false, "\(error)")
                 }
             })
             .disposed(by: disposeBag)
