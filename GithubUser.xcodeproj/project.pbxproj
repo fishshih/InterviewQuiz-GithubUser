@@ -49,6 +49,7 @@
 		DA572A6D275A8CFE004C6DB9 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */; };
 		DA572A6E275A8CFE004C6DB9 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A6B275A8CFE004C6DB9 /* UserInfoViewModel.swift */; };
 		DA572A7D275AB855004C6DB9 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A7C275AB855004C6DB9 /* CollectionExtension.swift */; };
+		DA572A81275AB8A1004C6DB9 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A80275AB8A1004C6DB9 /* MainTabBarCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		DA572A6B275A8CFE004C6DB9 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		DA572A7C275AB855004C6DB9 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		DA572A80275AB8A1004C6DB9 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				DA1DF0D0275900F700636D7B /* CoordinatorPrototype.swift */,
 				DA1DF0E02759179C00636D7B /* AppCoordinator.swift */,
 				DA1DF0E327591A4800636D7B /* LoginCoordinator.swift */,
+				DA572A80275AB8A1004C6DB9 /* MainTabBarCoordinator.swift */,
 				DA572A5A275A8C29004C6DB9 /* UsersListCoordinator.swift */,
 				DA572A62275A8CE1004C6DB9 /* PersonalInfoCoordinator.swift */,
 				DA572A69275A8CFE004C6DB9 /* UserInfoCoordinator.swift */,
@@ -336,6 +339,7 @@
 				DA572A66275A8CE1004C6DB9 /* PersonalInfoViewController.swift in Sources */,
 				DA1DF1262759536F00636D7B /* AuthAPI.swift in Sources */,
 				DA0BA1822757FA780049D2E8 /* SceneDelegate.swift in Sources */,
+				DA572A81275AB8A1004C6DB9 /* MainTabBarCoordinator.swift in Sources */,
 				DA572A6C275A8CFE004C6DB9 /* UserInfoCoordinator.swift in Sources */,
 				DA1DF0E827591A4800636D7B /* LoginViewModel.swift in Sources */,
 				DA1DF130275955DF00636D7B /* APIBase.swift in Sources */,

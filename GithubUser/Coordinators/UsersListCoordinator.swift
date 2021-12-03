@@ -9,7 +9,11 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class UsersListCoordinator: Coordinator<Void> {
+enum UsersListCoordination {
+    case switchTab
+}
+
+class UsersListCoordinator: Coordinator<UsersListCoordination> {
 
     override func start() {
         let vc = UsersListViewController()
