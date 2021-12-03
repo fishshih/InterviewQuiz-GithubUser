@@ -73,8 +73,7 @@ extension LoginViewModel: LoginViewModelInput {
 extension LoginViewModel: LoginViewModelOutput {
 
     var url: AnyPublisher<URL, Never> {
-        urlPublisher
-            .publisher
+        $urlPublisher
             .compactMap { $0 }
             .eraseToAnyPublisher()
     }
