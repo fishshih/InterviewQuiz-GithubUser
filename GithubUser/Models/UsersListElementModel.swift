@@ -1,5 +1,5 @@
 //
-//  UserListElementModel.swift
+//  UsersListElementModel.swift
 //  GithubUser
 //
 //  Created by Fish Shih on 2021/12/3.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-// MARK: - UserListElementModel
+// MARK: - UsersListElementModel
 
-struct UserListElementModel: Codable {
+struct UsersListElementModel: Codable {
 
     let login: String
     let id: Int

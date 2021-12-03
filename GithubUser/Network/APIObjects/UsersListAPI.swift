@@ -12,7 +12,7 @@ import RxCocoa
 
 private struct RequestTargetType: GUTargetType {
 
-    typealias ResponseType = [UserListElementModel]
+    typealias ResponseType = [UsersListElementModel]
 
     var path: String {
         "users"
@@ -29,14 +29,14 @@ private struct RequestTargetType: GUTargetType {
 
 protocol UsersListAPIPrototype {
 
-    var result: Observable<Result<[UserListElementModel], ResponseError>> { get }
+    var result: Observable<Result<[UsersListElementModel], ResponseError>> { get }
 
     func fetch()
 }
 
 struct UsersListAPI: UsersListAPIPrototype {
 
-    var result: Observable<Result<[UserListElementModel], ResponseError>> { _result.asObservable() }
+    var result: Observable<Result<[UsersListElementModel], ResponseError>> { _result.asObservable() }
 
     func fetch() {
         MoyaProvider<RequestTargetType>(plugins: [TokenPlugin()]).send(
@@ -53,6 +53,6 @@ struct UsersListAPI: UsersListAPIPrototype {
         }
     }
 
-    private let _result = PublishRelay<Result<[UserListElementModel], ResponseError>>()
+    private let _result = PublishRelay<Result<[UsersListElementModel], ResponseError>>()
 }
 
