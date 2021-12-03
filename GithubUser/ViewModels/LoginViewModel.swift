@@ -13,7 +13,7 @@ import Combine
 // MARK: - Reaction
 
 enum LoginViewModelReaction {
-    case loginSuccess(code: String)
+    case loginSuccess
 }
 
 // MARK: - Prototype
@@ -34,6 +34,8 @@ protocol LoginViewModelPrototype {
 // MARK: - View model
 
 class LoginViewModel: LoginViewModelPrototype {
+
+    let reaction = PassthroughSubject<LoginViewModelReaction, Never>()
 
     var input: LoginViewModelInput { self }
     var output: LoginViewModelOutput { self }
@@ -90,7 +92,10 @@ private extension LoginViewModel {
                 [weak self] result in
                 switch result {
                 case .success(let model):
-                    print("😎 token = ", model.token)
+
+                    GUUserDefaults.save(token: model.token)
+                    self?.reaction.send(.loginSuccess)
+
                 case .failure(let error):
                     assert(false, "\(error)")
                 }

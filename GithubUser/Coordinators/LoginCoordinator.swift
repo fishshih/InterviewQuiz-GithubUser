@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Combine
 
 enum LoginCoordinationReaction {
     case loginSuccess
@@ -29,10 +30,23 @@ class LoginCoordinator: Coordinator<LoginCoordinationReaction> {
         rootViewController = vc
         vc.viewModel = viewModel
 
+        viewModel
+            .reaction
+            .sink {
+                [weak output] reaction in
+                switch reaction {
+                case .loginSuccess:
+                    output?.accept(.loginSuccess)
+                }
+            }
+            .store(in: &cancelableSet)
+
         window.rootViewController = rootViewController
     }
 
     // MARK: - Private
 
     private let window: UIWindow
+
+    private var cancelableSet = Set<AnyCancellable>()
 }
