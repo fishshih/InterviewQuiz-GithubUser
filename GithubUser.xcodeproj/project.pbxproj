@@ -53,6 +53,7 @@
 		DA572A8B275ACC25004C6DB9 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A8A275ACC25004C6DB9 /* UIImageExtension.swift */; };
 		DA572A92275B9568004C6DB9 /* GUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A91275B9568004C6DB9 /* GUNavigationController.swift */; };
 		DA572A98275B95CA004C6DB9 /* UsersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A97275B95CA004C6DB9 /* UsersListTableViewCell.swift */; };
+		DA572A9C275BBD7A004C6DB9 /* UserInfoItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A9B275BBD7A004C6DB9 /* UserInfoItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		DA572A8A275ACC25004C6DB9 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		DA572A91275B9568004C6DB9 /* GUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUNavigationController.swift; sourceTree = "<group>"; };
 		DA572A97275B95CA004C6DB9 /* UsersListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListTableViewCell.swift; sourceTree = "<group>"; };
+		DA572A9B275BBD7A004C6DB9 /* UserInfoItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				DA1DF1212759530D00636D7B /* OAuthModel.swift */,
 				DA1B17A127597287006E3C21 /* UserModel.swift */,
 				DA1B17A4275974AB006E3C21 /* UsersListElementModel.swift */,
+				DA572A9B275BBD7A004C6DB9 /* UserInfoItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1B17A5275974AB006E3C21 /* UsersListElementModel.swift in Sources */,
+				DA572A9C275BBD7A004C6DB9 /* UserInfoItemModel.swift in Sources */,
 				DA1DF12A2759543300636D7B /* GUTargetType.swift in Sources */,
 				DA1DF0E727591A4800636D7B /* LoginViewController.swift in Sources */,
 				DA1DF0E627591A4800636D7B /* LoginCoordinator.swift in Sources */,
