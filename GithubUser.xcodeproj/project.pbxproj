@@ -52,6 +52,7 @@
 		DA572A81275AB8A1004C6DB9 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A80275AB8A1004C6DB9 /* MainTabBarCoordinator.swift */; };
 		DA572A8B275ACC25004C6DB9 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A8A275ACC25004C6DB9 /* UIImageExtension.swift */; };
 		DA572A92275B9568004C6DB9 /* GUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A91275B9568004C6DB9 /* GUNavigationController.swift */; };
+		DA572A98275B95CA004C6DB9 /* UsersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A97275B95CA004C6DB9 /* UsersListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		DA572A80275AB8A1004C6DB9 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		DA572A8A275ACC25004C6DB9 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		DA572A91275B9568004C6DB9 /* GUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUNavigationController.swift; sourceTree = "<group>"; };
+		DA572A97275B95CA004C6DB9 /* UsersListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +178,8 @@
 		DA1DF0C92758F88300636D7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DA572A95275B95CA004C6DB9 /* UsersList */,
 				DA1DF0E427591A4800636D7B /* LoginViewController.swift */,
-				DA572A5B275A8C29004C6DB9 /* UsersListViewController.swift */,
 				DA572A63275A8CE1004C6DB9 /* PersonalInfoViewController.swift */,
 				DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */,
 			);
@@ -254,6 +256,23 @@
 				DA572A91275B9568004C6DB9 /* GUNavigationController.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		DA572A95275B95CA004C6DB9 /* UsersList */ = {
+			isa = PBXGroup;
+			children = (
+				DA572A96275B95CA004C6DB9 /* Subviews */,
+				DA572A5B275A8C29004C6DB9 /* UsersListViewController.swift */,
+			);
+			path = UsersList;
+			sourceTree = "<group>";
+		};
+		DA572A96275B95CA004C6DB9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				DA572A97275B95CA004C6DB9 /* UsersListTableViewCell.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +381,7 @@
 				DA1B17A227597287006E3C21 /* UserModel.swift in Sources */,
 				DA572A8B275ACC25004C6DB9 /* UIImageExtension.swift in Sources */,
 				DA572A6E275A8CFE004C6DB9 /* UserInfoViewModel.swift in Sources */,
+				DA572A98275B95CA004C6DB9 /* UsersListTableViewCell.swift in Sources */,
 				DA572A5F275A8C29004C6DB9 /* UsersListViewModel.swift in Sources */,
 				DA572A92275B9568004C6DB9 /* GUNavigationController.swift in Sources */,
 				DA572A5D275A8C29004C6DB9 /* UsersListCoordinator.swift in Sources */,
