@@ -54,6 +54,8 @@
 		DA572A92275B9568004C6DB9 /* GUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A91275B9568004C6DB9 /* GUNavigationController.swift */; };
 		DA572A98275B95CA004C6DB9 /* UsersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A97275B95CA004C6DB9 /* UsersListTableViewCell.swift */; };
 		DA572A9C275BBD7A004C6DB9 /* UserInfoItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A9B275BBD7A004C6DB9 /* UserInfoItemModel.swift */; };
+		DA572AA1275BC598004C6DB9 /* UserBaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AA0275BC598004C6DB9 /* UserBaseInfoView.swift */; };
+		DA572AA5275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AA4275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		DA572A91275B9568004C6DB9 /* GUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUNavigationController.swift; sourceTree = "<group>"; };
 		DA572A97275B95CA004C6DB9 /* UsersListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListTableViewCell.swift; sourceTree = "<group>"; };
 		DA572A9B275BBD7A004C6DB9 /* UserInfoItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoItemModel.swift; sourceTree = "<group>"; };
+		DA572AA0275BC598004C6DB9 /* UserBaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBaseInfoView.swift; sourceTree = "<group>"; };
+		DA572AA4275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,9 +185,9 @@
 			isa = PBXGroup;
 			children = (
 				DA572A95275B95CA004C6DB9 /* UsersList */,
+				DA572A9E275BC54C004C6DB9 /* UserInfo */,
 				DA1DF0E427591A4800636D7B /* LoginViewController.swift */,
 				DA572A63275A8CE1004C6DB9 /* PersonalInfoViewController.swift */,
-				DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +282,24 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		DA572A9E275BC54C004C6DB9 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DA572A9F275BC558004C6DB9 /* Subviews */,
+				DA572A6A275A8CFE004C6DB9 /* UserInfoViewController.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		DA572A9F275BC558004C6DB9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				DA572AA0275BC598004C6DB9 /* UserBaseInfoView.swift */,
+				DA572AA4275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,6 +389,7 @@
 				DA1B17A5275974AB006E3C21 /* UsersListElementModel.swift in Sources */,
 				DA572A9C275BBD7A004C6DB9 /* UserInfoItemModel.swift in Sources */,
 				DA1DF12A2759543300636D7B /* GUTargetType.swift in Sources */,
+				DA572AA1275BC598004C6DB9 /* UserBaseInfoView.swift in Sources */,
 				DA1DF0E727591A4800636D7B /* LoginViewController.swift in Sources */,
 				DA1DF0E627591A4800636D7B /* LoginCoordinator.swift in Sources */,
 				DA1DF0ED2759291000636D7B /* CellExtension.swift in Sources */,
@@ -396,6 +419,7 @@
 				DA1DF0D1275900F700636D7B /* Coordinator.swift in Sources */,
 				DA1B17B527597DEA006E3C21 /* TokenPlugin.swift in Sources */,
 				DA572A67275A8CE1004C6DB9 /* PersonalInfoViewModel.swift in Sources */,
+				DA572AA5275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift in Sources */,
 				DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */,
 				DA572A7D275AB855004C6DB9 /* CollectionExtension.swift in Sources */,
 				DA1DF0F02759292C00636D7B /* PrepareClassInstance.swift in Sources */,
