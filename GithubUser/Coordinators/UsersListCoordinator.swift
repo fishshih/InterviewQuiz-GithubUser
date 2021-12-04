@@ -20,30 +20,41 @@ class UsersListCoordinator: Coordinator<UsersListCoordination> {
 
         let vc = UsersListViewController()
 
-        navigationController = .init(rootViewController: vc)
+        navigationController = GUNavigationController(rootViewController: vc)
+        rootViewController = vc
 
         let viewModel = UsersListViewModel(
             usersListAPI: UsersListAPI(),
             userInfoAPI: UserInfoAPI()
         )
 
+        vc.viewModel = viewModel
+
         viewModel
             .reaction
             .sink {
-                [weak output] reaction in
+                [weak self] reaction in
                 switch reaction {
                 case .switchTab:
-                    output?.accept(.switchTab)
+                    self?.output.accept(.switchTab)
                 case .showUserInfo(model: let model):
-                    break
+                    self?.showUserInfo(by: model)
                 }
             }
             .store(in: &cancelableSet)
-
-        rootViewController = vc
     }
 
     // MARK: Private
 
     private var cancelableSet = Set<AnyCancellable>()
+}
+
+private extension UsersListCoordinator {
+
+    func showUserInfo(by model: UserModel) {
+
+        let next = UserInfoCoordinator()
+
+        presentCoordinator(coordinator: next)
+    }
 }
