@@ -62,9 +62,26 @@ class UsersListTableViewCell: UITableViewCell {
 private extension UsersListTableViewCell {
 
     func setupUI() {
+        configureBackground()
         configureAvatarImageView()
         configureNameLabel()
         configureDescLabel()
+    }
+
+    func configureBackground() {
+
+        backgroundColor = .clear
+
+        let backgroundView = UIView() --> {
+            $0.backgroundColor = .white
+        }
+
+        contentView.addSubview(backgroundView)
+
+        backgroundView.snp.makeConstraints {
+            $0.center.leading.equalToSuperview()
+            $0.top.equalTo(0.6)
+        }
     }
 
     func configureAvatarImageView() {

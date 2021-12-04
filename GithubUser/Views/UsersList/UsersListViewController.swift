@@ -41,9 +41,15 @@ class UsersListViewController: UIViewController {
     }
 
     private let tableView = UITableView() --> {
+
         $0.separatorStyle = .none
         $0.register(UsersListTableViewCell.self)
         $0.contentInset.bottom += 72
+
+        let backgroundColor = #colorLiteral(red: 0.9625373483, green: 0.9508945346, blue: 0.9713860154, alpha: 1)
+
+        $0.backgroundColor = backgroundColor
+        $0.separatorColor = backgroundColor
     }
 
     private let disposeBag = DisposeBag()
@@ -104,7 +110,7 @@ private extension UsersListViewController {
 
                 guard shouldChangeColor else { return }
 
-                let color: UIColor = changeToLarge ? .white : .black
+                let color: UIColor = changeToLarge ? .clear : .black
 
                 UIViewPropertyAnimator
                     .runningPropertyAnimator(
@@ -126,7 +132,7 @@ private extension UsersListViewController {
         let label = UILabel() --> {
             $0.text = navigationItem.title
             $0.font = UIFont(name: "Verdana-Bold", size: 20)
-            $0.textColor = .white
+            $0.textColor = tableView.backgroundColor
         }
 
         navigationItem.leftBarButtonItem = .init(customView: label)
