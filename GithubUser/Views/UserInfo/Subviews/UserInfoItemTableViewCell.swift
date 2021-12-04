@@ -14,7 +14,7 @@ class UserInfoItemTableViewCell: UITableViewCell {
 
     // MARK: - Property
 
-    @Published var image: ImageType?
+    @Published var imageType: ImageType?
     @Published var value: String?
 
     // MARK: - Life cycle
@@ -33,11 +33,14 @@ class UserInfoItemTableViewCell: UITableViewCell {
 
     // MARK: - Private property
 
-    private let iconImageView = UIImageView()
+    private let iconImageView = UIImageView() --> {
+        $0.contentMode = .scaleAspectFit
+        $0.tintColor = #colorLiteral(red: 0.08759657294, green: 0.1211735532, blue: 0.1974031329, alpha: 1)
+    }
 
     private let valueLabel = UILabel() --> {
         $0.font = .systemFont(ofSize: 14, weight: .semibold)
-        $0.textColor = #colorLiteral(red: 0.08759657294, green: 0.1211735532, blue: 0.1974031329, alpha: 1)
+        $0.textColor = #colorLiteral(red: 0.3854748011, green: 0.4147148132, blue: 0.5077751875, alpha: 1)
     }
 
     private let disposeBag = DisposeBag()
@@ -59,7 +62,7 @@ private extension UserInfoItemTableViewCell {
 
         iconImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.leading.equalTo(40)
+            $0.centerX.equalToSuperview().multipliedBy(0.5)
             $0.width.equalTo(40)
         }
     }
@@ -70,8 +73,8 @@ private extension UserInfoItemTableViewCell {
 
         valueLabel.snp.makeConstraints {
             $0.centerY.equalTo(iconImageView)
-            $0.leading.equalTo(iconImageView.snp.trailing).offset(24)
-            $0.trailing.lessThanOrEqualToSuperview().offset(-40)
+            $0.leading.equalTo(iconImageView.snp.trailing).offset(18)
+            $0.trailing.lessThanOrEqualToSuperview().offset(-30)
         }
     }
 }
@@ -86,7 +89,8 @@ private extension UserInfoItemTableViewCell {
 
     func bind() {
 
-        $image
+        $imageType
+            .compactMap { $0 }
             .map {
                 switch $0 {
                 case .system(name: let name):
