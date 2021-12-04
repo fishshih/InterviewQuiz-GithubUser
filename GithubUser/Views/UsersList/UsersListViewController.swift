@@ -36,10 +36,6 @@ class UsersListViewController: UIViewController {
         }
     }
 
-    private var customNavigationController: GUNavigationController? {
-        navigationController as? GUNavigationController
-    }
-
     private let tableView = UITableView() --> {
 
         $0.separatorStyle = .none
@@ -78,13 +74,9 @@ private extension UsersListViewController {
             ]
 
             $0.titleTextAttributes = [.foregroundColor: UIColor.clear]
-
-            $0.backButtonAppearance = UIBarButtonItemAppearance() --> {
-                $0.normal.titleTextAttributes = [.foregroundColor: UIColor.white]
-            }
         }
 
-        let nav = customNavigationController
+        let nav = navigationController as? GUNavigationController
         let navBar = nav?.navigationBar
 
         navigationItem.title = "GitHub"
@@ -94,7 +86,6 @@ private extension UsersListViewController {
         navBar?.tintColor = .white
         navBar?.backgroundColor = .clear
         navBar?.setBackgroundImage(.withColor(.clear), for: .default)
-        nav?.navigationItem.backBarButtonItem?.tintColor = .white
 
         navBar?
             .rx

@@ -8,7 +8,6 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import Combine
 
 enum UsersListCoordination {
     case switchTab
