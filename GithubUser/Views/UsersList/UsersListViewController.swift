@@ -55,7 +55,6 @@ class UsersListViewController: UIViewController {
 private extension UsersListViewController {
 
     func setupUI() {
-        title = "GitHub"
         configureNavigationController()
         configureTableView()
     }
@@ -82,6 +81,7 @@ private extension UsersListViewController {
         let nav = customNavigationController
         let navBar = nav?.navigationBar
 
+        navigationItem.title = "GitHub"
         navBar?.prefersLargeTitles = true
         navBar?.standardAppearance = appearance
         navBar?.scrollEdgeAppearance = appearance
@@ -124,7 +124,7 @@ private extension UsersListViewController {
             .disposed(by: disposeBag)
 
         let label = UILabel() --> {
-            $0.text = title
+            $0.text = navigationItem.title
             $0.font = UIFont(name: "Verdana-Bold", size: 20)
             $0.textColor = .white
         }
