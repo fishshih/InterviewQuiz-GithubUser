@@ -171,6 +171,10 @@ private extension MainTabBarCoordinator {
 
         return .init() --> {
             $0.setViewControllers(vcs, animated: true)
+            $0.tabBar.tintColor = .darkGray
+            $0.tabBar.unselectedItemTintColor = .lightGray
+            $0.tabBar.isTranslucent = false
+            $0.tabBar.backgroundColor = .white
         }
     }
 
