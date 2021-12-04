@@ -31,11 +31,20 @@ extension TabBarType {
 
         let imgName: String
 
-        switch self {
-        case .usersList:
-            imgName = "list.bullet.circle.fill"
-        case .personalInfo:
-            imgName = "person.circle.fill"
+        if #available(iOS 15, *) {
+            switch self {
+            case .usersList:
+                imgName = "list.bullet.circle.fill"
+            case .personalInfo:
+                imgName = "person.circle.fill"
+            }
+        } else {
+            switch self {
+            case .usersList:
+                imgName = "list.bullet"
+            case .personalInfo:
+                imgName = "person.circle"
+            }
         }
 
         return UIImage(systemName: imgName)?.withRenderingMode(.alwaysTemplate)
@@ -171,8 +180,8 @@ private extension MainTabBarCoordinator {
 
         return .init() --> {
             $0.setViewControllers(vcs, animated: true)
-            $0.tabBar.tintColor = .darkGray
-            $0.tabBar.unselectedItemTintColor = .lightGray
+            $0.tabBar.tintColor = #colorLiteral(red: 0.07916644961, green: 0.1094686463, blue: 0.178361088, alpha: 1)
+            $0.tabBar.unselectedItemTintColor = #colorLiteral(red: 0.702612102, green: 0.6975950599, blue: 0.7064554095, alpha: 1)
             $0.tabBar.isTranslucent = false
             $0.tabBar.backgroundColor = .white
         }
