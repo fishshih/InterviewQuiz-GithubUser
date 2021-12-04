@@ -47,6 +47,4 @@ class LoginCoordinator: Coordinator<LoginCoordinationReaction> {
     // MARK: - Private
 
     private let window: UIWindow
-
-    private var cancelableSet = Set<AnyCancellable>()
 }

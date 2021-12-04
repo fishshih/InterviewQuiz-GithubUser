@@ -43,11 +43,9 @@ class UsersListCoordinator: Coordinator<UsersListCoordination> {
             }
             .store(in: &cancelableSet)
     }
-
-    // MARK: Private
-
-    private var cancelableSet = Set<AnyCancellable>()
 }
+
+// MARK: Private
 
 private extension UsersListCoordinator {
 

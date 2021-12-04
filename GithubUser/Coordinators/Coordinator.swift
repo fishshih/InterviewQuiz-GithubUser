@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Combine
 
 class Coordinator<ReactionType>: CoordinatorPrototype {
 
@@ -23,6 +24,7 @@ class Coordinator<ReactionType>: CoordinatorPrototype {
     let output = PublishRelay<CoordinatorReaction>()
 
     var disposeBag = DisposeBag()
+    var cancelableSet = Set<AnyCancellable>()
 
     // MARK: Function
 
