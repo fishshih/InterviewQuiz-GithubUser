@@ -94,7 +94,8 @@ private extension UserInfoItemTableViewCell {
             .map {
                 switch $0 {
                 case .system(name: let name):
-                    return UIImage(systemName: name)
+                    let config = UIImage.SymbolConfiguration(pointSize: 24)
+                    return UIImage(systemName: name, withConfiguration: config)
                 case .asset(name: let name):
                     return UIImage(named: name)
                 }
