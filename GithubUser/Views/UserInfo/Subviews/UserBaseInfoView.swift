@@ -17,6 +17,7 @@ class UserBaseInfoView: UIView {
     @Published var avatarURLString: String?
     @Published var name: String?
     @Published var bio: String?
+    @Published var height: CGFloat?
 
     var closeEvent: Observable<Void> {
         closeButton.rx.tap.asObservable()
@@ -38,6 +39,11 @@ class UserBaseInfoView: UIView {
         setupUI()
 
         bind()
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        height = frame.height
     }
 
     // MARK: - Private property
