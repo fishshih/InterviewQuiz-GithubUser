@@ -51,7 +51,18 @@ private extension UsersListCoordinator {
 
     func showUserInfo(by model: UserModel) {
 
-        let next = UserInfoCoordinator()
+        let next = UserInfoCoordinator(model: model)
+
+        next
+            .output
+            .subscribe(onNext: {
+                [weak self] reaction in
+                switch reaction {
+                case .dismiss:
+                    self?.dismiss(coordinator: next)
+                }
+            })
+            .disposed(by: disposeBag)
 
         presentCoordinator(coordinator: next)
     }
