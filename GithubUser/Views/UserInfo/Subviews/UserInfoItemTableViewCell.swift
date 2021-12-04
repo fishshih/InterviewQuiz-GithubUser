@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 import Combine
 
 class UserInfoItemTableViewCell: UITableViewCell {
@@ -43,7 +41,6 @@ class UserInfoItemTableViewCell: UITableViewCell {
         $0.textColor = #colorLiteral(red: 0.3854748011, green: 0.4147148132, blue: 0.5077751875, alpha: 1)
     }
 
-    private let disposeBag = DisposeBag()
     private var cancelableSet = Set<AnyCancellable>()
 }
 
@@ -78,10 +75,6 @@ private extension UserInfoItemTableViewCell {
         }
     }
 }
-
-// MARK: - Private func
-
-private extension UserInfoItemTableViewCell { }
 
 // MARK: - Binding
 

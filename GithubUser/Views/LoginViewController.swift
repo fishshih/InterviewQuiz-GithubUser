@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 import Combine
 import WebKit
 import SnapKit
@@ -34,7 +32,6 @@ class LoginViewController: UIViewController {
 
     private let webView = WKWebView()
 
-    private let disposeBag = DisposeBag()
     private var cancelableSet = Set<AnyCancellable>()
 }
 
@@ -57,11 +54,6 @@ private extension LoginViewController {
             $0.edges.equalToSuperview()
         }
     }
-}
-
-// MARK: - Private func
-
-private extension LoginViewController {
 }
 
 // MARK: - Binding

@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 import Combine
 import Kingfisher
 
@@ -53,7 +51,6 @@ class UsersListTableViewCell: UITableViewCell {
         $0.textColor = #colorLiteral(red: 0.2503578961, green: 0.3272333741, blue: 0.513871491, alpha: 1)
     }
 
-    private let disposeBag = DisposeBag()
     private var cancelableSet = Set<AnyCancellable>()
 }
 
@@ -117,10 +114,6 @@ private extension UsersListTableViewCell {
         }
     }
 }
-
-// MARK: - Private func
-
-private extension UsersListTableViewCell { }
 
 // MARK: - Binding
 

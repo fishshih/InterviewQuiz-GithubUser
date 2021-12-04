@@ -142,12 +142,6 @@ private extension UsersListViewController {
     }
 }
 
-// MARK: - Private func
-
-private extension UsersListViewController {
-
-}
-
 // MARK: - Binding
 
 private extension UsersListViewController {

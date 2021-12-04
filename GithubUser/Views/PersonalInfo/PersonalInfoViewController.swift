@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 import Combine
 import Kingfisher
 
@@ -112,7 +110,6 @@ class PersonalInfoViewController: UIViewController {
         $0.attributedText = attr
     }
 
-    private let disposeBag = DisposeBag()
     private var cancelableSet = Set<AnyCancellable>()
 }
 

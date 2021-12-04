@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import RxSwift
-import RxCocoa
 import Combine
 
 // MARK: - Reaction
@@ -48,8 +46,6 @@ class UserInfoViewModel: UserInfoViewModelPrototype {
     }
 
     @Published private var model: UserModel?
-
-    private let disposeBag = DisposeBag()
 }
 
 // MARK: - Input & Output

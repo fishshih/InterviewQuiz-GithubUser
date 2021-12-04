@@ -77,7 +77,6 @@ class UserBaseInfoView: UIView {
         $0.numberOfLines = 0
     }
 
-    private let disposeBag = DisposeBag()
     private var cancelableSet = Set<AnyCancellable>()
 }
 

@@ -99,12 +99,12 @@ extension PersonalInfoViewModel: PersonalInfoViewModelOutput {
         modelPublisher.map(\.following).eraseToAnyPublisher()
     }
 
-    var email: AnyPublisher<String?, Never> {
-        modelPublisher.map(\.email).eraseToAnyPublisher()
-    }
-
     var numberOfRepositories: AnyPublisher<Int, Never> {
         modelPublisher.map(\.publicRepos).eraseToAnyPublisher()
+    }
+
+    var email: AnyPublisher<String?, Never> {
+        modelPublisher.map(\.email).eraseToAnyPublisher()
     }
 }
 

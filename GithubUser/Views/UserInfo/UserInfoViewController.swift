@@ -92,12 +92,6 @@ private extension UserInfoViewController {
     }
 }
 
-// MARK: - Private func
-
-private extension UserInfoViewController {
-
-}
-
 // MARK: - Binding
 
 private extension UserInfoViewController {

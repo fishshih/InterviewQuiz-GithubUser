@@ -5,9 +5,7 @@
 //  Created by Fish Shih on 2021/12/4.
 //
 
-import Foundation
-import RxSwift
-import RxCocoa
+import UIKit
 
 enum UsersListCoordination {
     case switchTab
