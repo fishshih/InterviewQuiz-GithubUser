@@ -51,6 +51,7 @@
 		DA572A7D275AB855004C6DB9 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A7C275AB855004C6DB9 /* CollectionExtension.swift */; };
 		DA572A81275AB8A1004C6DB9 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A80275AB8A1004C6DB9 /* MainTabBarCoordinator.swift */; };
 		DA572A8B275ACC25004C6DB9 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A8A275ACC25004C6DB9 /* UIImageExtension.swift */; };
+		DA572A92275B9568004C6DB9 /* GUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A91275B9568004C6DB9 /* GUNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		DA572A7C275AB855004C6DB9 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 		DA572A80275AB8A1004C6DB9 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		DA572A8A275ACC25004C6DB9 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		DA572A91275B9568004C6DB9 /* GUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 		DA1DF0CC2758F89600636D7B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				DA572A90275B9546004C6DB9 /* UIComponents */,
 				DA1DF0EB2759290800636D7B /* Extension */,
 				DA1DF0EF2759292C00636D7B /* PrepareClassInstance.swift */,
 				DA1B17B127597CED006E3C21 /* GUUserDefaults.swift */,
@@ -243,6 +246,14 @@
 				DA1B17BA275982C3006E3C21 /* UsersListAPI.swift */,
 			);
 			path = APIObjects;
+			sourceTree = "<group>";
+		};
+		DA572A90275B9546004C6DB9 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				DA572A91275B9568004C6DB9 /* GUNavigationController.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +363,7 @@
 				DA572A8B275ACC25004C6DB9 /* UIImageExtension.swift in Sources */,
 				DA572A6E275A8CFE004C6DB9 /* UserInfoViewModel.swift in Sources */,
 				DA572A5F275A8C29004C6DB9 /* UsersListViewModel.swift in Sources */,
+				DA572A92275B9568004C6DB9 /* GUNavigationController.swift in Sources */,
 				DA572A5D275A8C29004C6DB9 /* UsersListCoordinator.swift in Sources */,
 				DA572A5E275A8C29004C6DB9 /* UsersListViewController.swift in Sources */,
 				DA1B17BB275982C3006E3C21 /* UsersListAPI.swift in Sources */,
