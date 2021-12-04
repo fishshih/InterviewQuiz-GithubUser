@@ -57,6 +57,7 @@
 		DA572AA1275BC598004C6DB9 /* UserBaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AA0275BC598004C6DB9 /* UserBaseInfoView.swift */; };
 		DA572AA5275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AA4275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift */; };
 		DA572AAA275BFC26004C6DB9 /* NSMutableAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AA9275BFC25004C6DB9 /* NSMutableAttributedStringExtension.swift */; };
+		DA572AAF275BFD95004C6DB9 /* PersonalInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AAE275BFD95004C6DB9 /* PersonalInfoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		DA572AA0275BC598004C6DB9 /* UserBaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBaseInfoView.swift; sourceTree = "<group>"; };
 		DA572AA4275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoItemTableViewCell.swift; sourceTree = "<group>"; };
 		DA572AA9275BFC25004C6DB9 /* NSMutableAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringExtension.swift; sourceTree = "<group>"; };
+		DA572AAE275BFD95004C6DB9 /* PersonalInfoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,9 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				DA572A95275B95CA004C6DB9 /* UsersList */,
+				DA572AAC275BFD51004C6DB9 /* PersonalInfo */,
 				DA572A9E275BC54C004C6DB9 /* UserInfo */,
 				DA1DF0E427591A4800636D7B /* LoginViewController.swift */,
-				DA572A63275A8CE1004C6DB9 /* PersonalInfoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,6 +305,23 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		DA572AAC275BFD51004C6DB9 /* PersonalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DA572AAD275BFD70004C6DB9 /* Subviews */,
+				DA572A63275A8CE1004C6DB9 /* PersonalInfoViewController.swift */,
+			);
+			path = PersonalInfo;
+			sourceTree = "<group>";
+		};
+		DA572AAD275BFD70004C6DB9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				DA572AAE275BFD95004C6DB9 /* PersonalInfoItemView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,6 +423,7 @@
 				DA0BA1822757FA780049D2E8 /* SceneDelegate.swift in Sources */,
 				DA572A81275AB8A1004C6DB9 /* MainTabBarCoordinator.swift in Sources */,
 				DA572A6C275A8CFE004C6DB9 /* UserInfoCoordinator.swift in Sources */,
+				DA572AAF275BFD95004C6DB9 /* PersonalInfoItemView.swift in Sources */,
 				DA1DF0E827591A4800636D7B /* LoginViewModel.swift in Sources */,
 				DA1DF130275955DF00636D7B /* APIBase.swift in Sources */,
 				DA572A6D275A8CFE004C6DB9 /* UserInfoViewController.swift in Sources */,
