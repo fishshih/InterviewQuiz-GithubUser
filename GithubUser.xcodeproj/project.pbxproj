@@ -56,6 +56,7 @@
 		DA572A9C275BBD7A004C6DB9 /* UserInfoItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572A9B275BBD7A004C6DB9 /* UserInfoItemModel.swift */; };
 		DA572AA1275BC598004C6DB9 /* UserBaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AA0275BC598004C6DB9 /* UserBaseInfoView.swift */; };
 		DA572AA5275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AA4275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift */; };
+		DA572AAA275BFC26004C6DB9 /* NSMutableAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA572AA9275BFC25004C6DB9 /* NSMutableAttributedStringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		DA572A9B275BBD7A004C6DB9 /* UserInfoItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoItemModel.swift; sourceTree = "<group>"; };
 		DA572AA0275BC598004C6DB9 /* UserBaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBaseInfoView.swift; sourceTree = "<group>"; };
 		DA572AA4275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoItemTableViewCell.swift; sourceTree = "<group>"; };
+		DA572AA9275BFC25004C6DB9 /* NSMutableAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 				DA1DF0EC2759291000636D7B /* CellExtension.swift */,
 				DA572A7C275AB855004C6DB9 /* CollectionExtension.swift */,
 				DA572A8A275ACC25004C6DB9 /* UIImageExtension.swift */,
+				DA572AA9275BFC25004C6DB9 /* NSMutableAttributedStringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				DA572A67275A8CE1004C6DB9 /* PersonalInfoViewModel.swift in Sources */,
 				DA572AA5275BC5C2004C6DB9 /* UserInfoItemTableViewCell.swift in Sources */,
 				DA1DF0D2275900F700636D7B /* CoordinatorPrototype.swift in Sources */,
+				DA572AAA275BFC26004C6DB9 /* NSMutableAttributedStringExtension.swift in Sources */,
 				DA572A7D275AB855004C6DB9 /* CollectionExtension.swift in Sources */,
 				DA1DF0F02759292C00636D7B /* PrepareClassInstance.swift in Sources */,
 				DA1DF1222759530D00636D7B /* OAuthModel.swift in Sources */,
