@@ -9,14 +9,32 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class PersonalInfoCoordinator: Coordinator<Void> {
+enum PersonalInfoCoordination {
+    case switchTab
+}
+
+class PersonalInfoCoordinator: Coordinator<PersonalInfoCoordination> {
 
     override func start() {
-        let vc = PersonalInfoViewController()
-        rootViewController = vc
-    }
 
-    override func stop() {
+        let vc = PersonalInfoViewController()
+
+        navigationController = GUNavigationController(rootViewController: vc)
+        rootViewController = vc
+
+        let viewModel = PersonalInfoViewModel(api: UserInfoAPI())
+
+        vc.viewModel = viewModel
+
+        viewModel
+            .reaction
+            .sink {
+                [weak self] reaction in
+                switch reaction {
+                case .switchTab:
+                    self?.output.accept(.switchTab)
+                }
+            }
+            .store(in: &cancelableSet)
     }
-    
 }
