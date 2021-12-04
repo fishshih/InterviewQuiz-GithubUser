@@ -31,9 +31,9 @@ struct UserModel: Codable {
     let bio, twitterUsername: String?
     let publicRepos, publicGists, followers, following: Int
     let createdAt, updatedAt: String
-    let privateGists, totalPrivateRepos, ownedPrivateRepos, diskUsage: Int
-    let collaborators: Int
-    let twoFactorAuthentication: Bool
+    let privateGists, totalPrivateRepos, ownedPrivateRepos, diskUsage: Int?
+    let collaborators: Int?
+    let twoFactorAuthentication: Bool?
     let plan: Plan?
 
     enum CodingKeys: String, CodingKey {
