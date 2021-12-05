@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import Combine
 import Kingfisher
 
@@ -110,6 +112,11 @@ class PersonalInfoViewController: UIViewController {
         $0.attributedText = attr
     }
 
+    private let swipe = UISwipeGestureRecognizer() --> {
+        $0.direction = .right
+    }
+
+    private let disposeBag = DisposeBag()
     private var cancelableSet = Set<AnyCancellable>()
 }
 
@@ -127,6 +134,7 @@ private extension PersonalInfoViewController {
         configureInfoItemStackView()
         configureInfoItemViews()
         configureStatementLabel()
+        view.addGestureRecognizer(swipe)
     }
 
     func configureNavigation() {
@@ -318,5 +326,14 @@ private extension PersonalInfoViewController {
             .map { _ in "fish.shih@icloud.com" }
             .assign(to: \.contentLabel.text, on: emailView)
             .store(in: &cancelableSet)
+
+        swipe
+            .rx
+            .event
+            .filter { $0.state == .recognized }
+            .subscribe(onNext: { _ in
+                viewModel.input.switchTab()
+            })
+            .disposed(by: disposeBag)
     }
 }

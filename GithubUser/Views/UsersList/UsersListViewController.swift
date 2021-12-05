@@ -48,6 +48,10 @@ class UsersListViewController: UIViewController {
         $0.separatorColor = backgroundColor
     }
 
+    private let swipe = UISwipeGestureRecognizer() --> {
+        $0.direction = .left
+    }
+
     private let disposeBag = DisposeBag()
     private var cancelable = Set<AnyCancellable>()
 }
@@ -59,6 +63,7 @@ private extension UsersListViewController {
     func setupUI() {
         configureNavigationController()
         configureTableView()
+        view.addGestureRecognizer(swipe)
     }
 
     func configureNavigationController() {
@@ -158,6 +163,15 @@ private extension UsersListViewController {
                 [weak tableView] indexPath in
                 tableView?.deselectRow(at: indexPath, animated: true)
                 viewModel.input.showUserInfo(by: indexPath.row)
+            })
+            .disposed(by: disposeBag)
+
+        swipe
+            .rx
+            .event
+            .filter { $0.state == .recognized }
+            .subscribe(onNext: { _ in
+                viewModel.input.switchTab()
             })
             .disposed(by: disposeBag)
     }

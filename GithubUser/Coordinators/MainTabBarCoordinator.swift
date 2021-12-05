@@ -116,8 +116,9 @@ private extension MainTabBarCoordinator {
                     .subscribe(onNext: {
                         [weak self] reaction in
                         switch reaction {
-                        default:
-                            break
+                        case .switchTab:
+                            guard let index = self?.getTabBarIndex(by: .personalInfo) else { return }
+                            self?.tabBarController?.selectedIndex = index
                         }
                     })
                     .disposed(by: disposeBag)
@@ -133,8 +134,9 @@ private extension MainTabBarCoordinator {
                     .subscribe(onNext: {
                         [weak self] reaction in
                         switch reaction {
-                        default:
-                            break
+                        case .switchTab:
+                            guard let index = self?.getTabBarIndex(by: .usersList) else { return }
+                            self?.tabBarController?.selectedIndex = index
                         }
                     })
                     .disposed(by: disposeBag)
